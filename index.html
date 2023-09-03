@@ -1,103 +1,62 @@
 <html>
     <head>
-
-        <style>
-            div {
-                margin:  0 auto;
-            }
-            #question{
-                font-size: 100px;
-                margin: 0px;
-            }
-            #sub-title{
-                margin: 0px;
-            }
-
-            .bambino-che-balla {
-                height: 120px;
-                width: 160px;
-                background-image: url(https://www.cnet.com/a/img/hub/2016/10/29/d3737aab-21b9-4958-a96b-f0174ec9de52/dancingbabyblk.gif) ;
-                width: 120px;
-                background-size: 120px;
-                margin-left: 120px;
-            }
-            .cane-che-balla{
-                height: 56px;
-                /* width: 52px; */
-                background-image: url(https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif);
-            }
-            .work-in-progress {
-                /* height: 480px; */
-                /* width: 480px; */
-                width: 360px;
-                height: 120px;
-                background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExenk3cnlhMmVhcWxkbHltZno3ODR0cTJvYTEwMnp2eDdoNjFscXB0cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dWa2rUaiahx1FB3jor/giphy.gif);
-                background-size: 120px;
-            }
-
-            .under-construction {
-                width: 177px;
-                height: 175px;
-                background-image: url(https://www.cameronsworld.net/img/content/22/right-side/4.gif);
-
-            }
-        </style>
+        <link rel="stylesheet" href="./index.css">
     </head>
-    <body style="width: 100%; text-align: center; background-image:url(https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif); background-size: 50px; " >
-        <img src="https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif" height="200px">
+    <body>
+        
+        <img src="https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif" height="40px">
+        <br>
+        <img src="https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif" height="60px">
+        <img src="https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif" height="60px">
+        <br>
+        <img src="https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif" height="80px">
+        <img src="https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif" height="80px">
+        <img src="https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif" height="80px">
+
         <h1 id="question">   
           question of the day
         </h1>
         <h2 id="sub-title"><i>ad mentula canis</i></h2>
-        <p class="answer">
-            <input type="radio" name="question" class="" value="1" >
-            asdioasdhkasdhfksia
-        </p>
-        <p class="answer"><input type="radio" name="question" class="" value="2" > 1</p>
-        <p class="answer"><input type="radio" name="question" class="" value="3" > 1</p>
-        <p class="answer"><input type="radio" name="question" class="" value="4" > 1</p>
-        <p class="answer"><input type="radio" name="question" class="" value="5" > 1</p>
-        <p class="answer"><input type="radio" name="question" class="" value="6" > 1</p>
-        <p class="answer"><input type="radio" name="question" class="" value="7" > 1</p>
-        <p class="answer"><input type="radio" name="question" class="" value="8" > 1</p>
-        <p class="answer"><input type="radio" name="question" class="" value="9" > 1</p>
-        <br>
-        <br>
-        <br>
-        <br>
+        <form id="answers">
+        <!-- loaded answers -->
+        </form>
+
+        <br>  <br>  <br>
+
         <div class="work-in-progress">
             <div class="bambino-che-balla"/>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
+        <br>  <br>  <br>
+
         <div class="under-construction">&nbsp;</div>
 
-        <br>
-        <br>
-        <br>
+        <br>  <br>  <br>
 
         <hr size="5" color="grey" width=00>
         
-        <br>
-        <br>
-        <br>
+        <br>  <br>  <br>
 
         <!-- <div class="under-construction">&nbsp;</div> -->
-
-  
         <!-- <div  class="work-in-progress" />
         <div  class="cane-che-balla" />
         <div class="bambino-che-balla" />
         <div class="under-construction" /> -->
+        <script type="text/javascript">
+            var answers = [
+                {id: 1, text: "Hello answer 1"},
+                {id: 2, text: "Hello answer 2"},
+                {id: 3, text: "Hello answer 3"},
+                {id: 4, text: "Hello answer 4"},
+                {id: 5, text: "Hello answer 5"},
+                {id: 6, text: "Hello answer 6"}
+            ]
+            var answersContainer = document.getElementById("answers");
+            for(var i=0; i<answers.length; i++){
+                answersContainer.innerHTML += "<p class='answer'><input type='radio' name='question' value='" + answers[i].id + "' > " + answers[i].text + " </p>";
+            }
+            answersContainer.innerHTML+="<button class='vote-button'>Vote!</button>";
+        </script> 
+            
     </body>  
 </html>   

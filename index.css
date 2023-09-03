@@ -1,0 +1,49 @@
+body {
+    width: 100%;
+    text-align: center;
+    /* background-image:url(https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif); */
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5182bbf8-6773-4d81-960f-3ad557822e28/d89lp3v-f9dec57e-f1af-4b75-8dcd-a7fb4bcabf90.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUxODJiYmY4LTY3NzMtNGQ4MS05NjBmLTNhZDU1NzgyMmUyOFwvZDg5bHAzdi1mOWRlYzU3ZS1mMWFmLTRiNzUtOGRjZC1hN2ZiNGJjYWJmOTAuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.m54WCsdeXnVOM498hIx5xeEotAuQb7jNU_vSD9_Q-Zs);
+    background-size: 4px;
+}
+div {
+    margin:  0 auto;
+}
+#question{
+    font-size: 128px;
+    margin: 0px;
+}
+#sub-title{
+    margin: 0px;
+}
+.bambino-che-balla {
+    height: 120px;
+    width: 160px;
+    background-image: url(https://www.cnet.com/a/img/hub/2016/10/29/d3737aab-21b9-4958-a96b-f0174ec9de52/dancingbabyblk.gif) ;
+    width: 120px;
+    background-size: 120px;
+    margin-left: 120px;
+}
+.cane-che-balla{
+    height: 56px;
+    /* width: 52px; */
+    background-image: url(https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif);
+}
+.work-in-progress {
+    /* height: 480px; */
+    /* width: 480px; */
+    width: 360px;
+    height: 120px;
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExenk3cnlhMmVhcWxkbHltZno3ODR0cTJvYTEwMnp2eDdoNjFscXB0cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dWa2rUaiahx1FB3jor/giphy.gif);
+    background-size: 120px;
+}
+.under-construction {
+    width: 177px;
+    height: 175px;
+    background-image: url(https://www.cameronsworld.net/img/content/22/right-side/4.gif);
+}
+.answer {
+    font-size: 24px;
+}
+#vote-button{
+
+}

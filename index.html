@@ -3,7 +3,6 @@
         <link rel="stylesheet" href="./index.css">
     </head>
     <body>
-        
         <img src="https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif" height="40px">
         <br>
         <img src="https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif" height="60px">
@@ -12,14 +11,12 @@
         <img src="https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif" height="80px">
         <img src="https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif" height="80px">
         <img src="https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif" height="80px">
-
-        <h1 id="question">   
-          question of the day
-        </h1>
+        
+        <h1 id="question">Question of the day</h1>
+        
         <h2 id="sub-title"><i>ad mentula canis</i></h2>
-        <form id="answers">
-        <!-- loaded answers -->
-        </form>
+        
+        <form id="answers"><!-- loaded answers --></form>
 
         <br>  <br>  <br>
 
@@ -36,12 +33,7 @@
         <hr size="5" color="grey" width=00>
         
         <br>  <br>  <br>
-
-        <!-- <div class="under-construction">&nbsp;</div> -->
-        <!-- <div  class="work-in-progress" />
-        <div  class="cane-che-balla" />
-        <div class="bambino-che-balla" />
-        <div class="under-construction" /> -->
+        
         <script type="text/javascript">
             var answers = [
                 {id: 1, text: "Hello answer 1"},
@@ -55,8 +47,7 @@
             for(var i=0; i<answers.length; i++){
                 answersContainer.innerHTML += "<p class='answer'><input type='radio' name='question' value='" + answers[i].id + "' > " + answers[i].text + " </p>";
             }
-            answersContainer.innerHTML+="<button class='vote-button'>Vote!</button>";
-        </script> 
-            
+            answersContainer.innerHTML+="<button id='vote-button'>VOTE!</button>";
+        </script>     
     </body>  
 </html>   
